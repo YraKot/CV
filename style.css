@@ -87,6 +87,79 @@ p {
   color: #222;
 }
 
+#js-to-bottom {
+  position: fixed;
+  bottom: 30px;
+  left: 30%;
+  width: 40px;
+  height: 40px;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  border-radius: 50%;
+}
+
+#js-to-bottom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 2px;
+  height: 20px;
+  background: #888;
+}
+
+#js-to-bottom:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  border: solid #888;
+  border-width: 0 2px 2px 0;
+  padding: 5px;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+}
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30px;
+  max-width: 160px;
+  width: 100%;
+  border: 2px solid #888;
+  color: #888;
+  border-radius: 13px;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  border-color: #222222;
+  color: #222222;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +185,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   max-height: 100%;
+  position: relative;
 }
 
 .intro-img {
@@ -152,7 +226,7 @@ p {
 
 .content {
   width: 70%;
-  padding: 50px 30px;
+  padding: 30px 30px 50px;
   background-color: #fff;
   max-height: 100%;
 }
@@ -162,7 +236,7 @@ p {
 }
 
 .content-list a {
-  display: block;
+  display: inline-block;
 }
 
 .content-title {
