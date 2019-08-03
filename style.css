@@ -120,14 +120,16 @@ h6 {
   }
 }
 
-p, li {
+p,
+li {
   font-size: 16px;
   line-height: 1.44;
   color: #222;
 }
 
 @media (max-width: 991.98px) {
-  p, li {
+  p,
+  li {
     font-size: 14px;
   }
 }
@@ -162,7 +164,7 @@ p, li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 2px;
+  width: 2.2px;
   height: 20px;
   background: #888;
 }
