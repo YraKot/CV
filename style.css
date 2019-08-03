@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -38,42 +39,74 @@ img {
 a {
   text-decoration: none;
   color: #222;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   color: #b5b5b5;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   font-size: 30px;
 }
 
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 h2 {
   font-size: 26px;
+}
+
+@media (max-width: 991.98px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 h3 {
   font-size: 24px;
 }
 
+@media (max-width: 991.98px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
 h4 {
   font-size: 22px;
 }
 
+@media (max-width: 991.98px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
 h5 {
   font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  h5 {
+    font-size: 18px;
+  }
 }
 
 h6 {
@@ -81,10 +114,26 @@ h6 {
   margin: 5px 0;
 }
 
-p {
+@media (max-width: 991.98px) {
+  h6 {
+    font-size: 16;
+  }
+}
+
+p, li {
   font-size: 16px;
   line-height: 1.44;
   color: #222;
+}
+
+@media (max-width: 991.98px) {
+  p, li {
+    font-size: 14px;
+  }
+}
+
+.wi100 {
+  width: 100%;
 }
 
 #js-to-bottom {
@@ -96,6 +145,14 @@ p {
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
   border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+  #js-to-bottom {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 #js-to-bottom::after {
@@ -156,8 +213,8 @@ p {
 .btn:hover {
   border-color: #222222;
   color: #222222;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .wrapper {
@@ -168,6 +225,15 @@ p {
   max-width: 1280px;
   margin: auto;
   min-height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .intro {
@@ -188,15 +254,70 @@ p {
   position: relative;
 }
 
+@media (max-width: 991.98px) {
+  .intro {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .intro {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .intro-img {
   width: 100%;
   max-height: 300px;
   height: 100%;
 }
 
+@media (max-width: 991.98px) {
+  .intro-img {
+    max-height: 240px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .intro-img {
+    max-width: 240px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro-img {
+    margin-right: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
 .intro-headline {
   margin: 10px 0;
   width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .intro-headline {
+    text-align: center;
+  }
 }
 
 .intro-title {
@@ -229,6 +350,18 @@ p {
   padding: 30px 30px 50px;
   background-color: #fff;
   max-height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    padding: 30px 20px 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .content-row {
@@ -273,11 +406,30 @@ p {
           justify-content: space-between;
 }
 
+@media (max-width: 575.98px) {
+  .content-head {
+    display: block;
+  }
+}
+
 .content-date {
   margin-left: 30px;
   font-size: 18px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media (max-width: 991.98px) {
+  .content-date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-date {
+    text-align: right;
+    margin: 5px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
