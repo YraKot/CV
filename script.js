@@ -3,6 +3,7 @@ var btnBottom = document.querySelector("#js-to-bottom");
 var btnWrp = document.querySelector(".btn-wrapper");
 btnBottom.addEventListener('click', function (e) {
     e.preventDefault();
+    // e.stopPropagation();
     window.scrollTo({
         'behavior': 'smooth',
         'left': 0,
@@ -11,7 +12,6 @@ btnBottom.addEventListener('click', function (e) {
     this.style.opacity = '0';
 
 });
-window.onscroll = function () { scrollTop() };
 
 function scrollTop() {
     if (document.documentElement.scrollTop > 400) {
@@ -21,6 +21,50 @@ function scrollTop() {
     }
 }
 
+window.onload = function(){
+    checkScroll();
+    // scrollTop();
+};
+window.addEventListener("resize", checkScroll);
+
+// check if vertical scroll present
+function checkScroll() {
+    
+    if (-[1,]) {
+        if (document.body.offsetHeight > window.innerHeight) {
+            console.log("scroll true");
+            // scrollTop();
+            window.onscroll = function () { scrollTop() };
+        } else {
+            console.log("scroll false")
+            btnBottom.style.opacity = '0';
+        }
+    } else {
+        if (document.body.offsetHeight > document.documentElement.clientHeight) {
+            console.log("scroll true");
+            window.onscroll = function () { scrollTop() };
+            // scrollTop();
+        } else {
+            btnBottom.style.opacity = '0';
+        }
+    }
+}
+
+
+// tooltip
+var version = document.querySelector(".version");
+var tooltip = document.querySelector(".tooltip");
+
+version.addEventListener("mouseover", function () {
+    tooltip.classList.add('hover');
+});
+version.addEventListener("mouseout", function () {
+    tooltip.classList.remove('hover');
+});
+//end
+
+
+// add to faforite
 function rudr_favorite(a) {
     pageTitle = document.title;
     pageURL = document.location;
@@ -47,3 +91,4 @@ function rudr_favorite(a) {
     }
     return false;
 }
+//end

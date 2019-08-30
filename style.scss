@@ -32,6 +32,9 @@ body {
 		height: 100%;
 		background-color: #e6e6e6;
 		z-index: -1;
+		@include mobile {
+			background-color: transparent;
+		}
 	}
 }
 
@@ -120,39 +123,23 @@ li {
 .wi100 {
 	width: 100%;
 }
-
-#js-to-bottom {
-	position: fixed;
-	bottom: 30px;
-	left: 30%;
-	width: 40px;
-	height: 40px;
-	transform-origin: 100% 0;
-	border-radius: 50%;
+.arrow-wrp{
+	position: sticky;
+	top: 350px;
+    width: 20px;
+	height: 30px;
+	transform: translateX(-5px);
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	@include mobile {
-		left: 50%;
-		transform: translateX(-50%);
+		display: none;
 	}
-	&::after {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 2.2px;
-		height: 20px;
-		background: #888;
-	}
-	&:before {
-		content: "";
-		position: absolute;
-		top: 18px;
-		left: 50%;
-		border: solid #888;
-		border-width: 0 2px 2px 0;
-		padding: 5px;
-		transform: rotate(45deg) translateX(-50%);
-		transform-origin: 0;
+}
+#js-to-bottom {
+	img {
+		width: 10px;
 	}
 }
 
@@ -188,6 +175,49 @@ li {
 	min-height: 100vh;
 	@include mobile {
 		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	.version {
+		position: absolute;
+		bottom: 30px;
+		z-index: 1;;
+		width: 100%;
+		padding: 0 30px;
+		color: #888;
+		font-size: 16px;
+		cursor: pointer;
+		@include mobile {
+			text-align: center;
+		}
+		b {
+			color: #222;
+		}
+	}
+	.tooltip {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		bottom: 30px;
+		left: 0px;
+		padding: 5px 10px;
+		border: 1px solid #888;
+		border-radius: 8px;
+		background-color: #fff;
+		li {
+			list-style-type: none;
+			color: #888;
+			text-align: left;
+			b {
+				color: #222;
+			}
+		}
+
+		&.hover {
+			display: block;
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 }
 
@@ -197,6 +227,7 @@ li {
 	background-color: #e6e6e6;
 	display: flex;
 	flex-direction: column;
+	// justify-content: space-between;
 	align-items: center;
 	max-height: 100%;
 	position: relative;
@@ -213,8 +244,12 @@ li {
 	}
 	&-img {
 		width: 100%;
-		max-height: 300px;
-		height: 100%;
+		margin-bottom: 20px;
+		img {
+			display: block;
+		}
+		// max-height: 300px;
+		// height: 100%;
 		@include tablet {
 			max-height: 240px;
 		}
