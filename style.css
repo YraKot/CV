@@ -231,6 +231,7 @@ li {
 }
 
 .wrapper .version {
+  display: none;
   position: absolute;
   bottom: 30px;
   z-index: 1;
