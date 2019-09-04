@@ -1,0 +1,64 @@
+.content {
+	width: 70%;
+	padding: 30px 30px 50px;
+	background-color: #fff;
+	max-height: 100%;
+	@include tablet {
+		padding: 30px 20px 50px;
+	}
+	@include mobile {
+		width: 100%;
+	}
+
+	&-row {
+		margin: 15px 0;
+	}
+
+	&-list {
+		a {
+			display: inline-block;
+		}
+	}
+
+	&-title {
+		position: relative;
+		margin: 10px 0;
+		line-height: 1.44;
+
+		&:before {
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: -7px;
+			width: 100%;
+			height: 2.2px;
+			background-color: #b5b5b5;
+			z-index: 1;
+		}
+	}
+
+	&-desc {
+		padding: 10px;
+	}
+	&-head {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		@include phone {
+			display: block;
+		}
+	}
+	&-date {
+		margin-left: 30px;
+		font-size: 18px;
+		letter-spacing: 0.8px;
+		flex-shrink: 0;
+		@include tablet {
+			font-size: 14px;
+		}
+		@include phone {
+			text-align: right;
+			margin: 5px 0;
+		}
+	}
+}
