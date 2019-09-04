@@ -1,3 +1,5 @@
+import '../styles/index.scss';
+
 
 var btnBottom = document.querySelector("#js-to-bottom");
 var btnWrp = document.querySelector(".btn-wrapper");
@@ -32,18 +34,13 @@ function checkScroll() {
     
     if (-[1,]) {
         if (document.body.offsetHeight > window.innerHeight) {
-            console.log("scroll true");
-            // scrollTop();
-            window.onscroll = function () { scrollTop() };
+            window.onscroll = function () { scrollTop(); };
         } else {
-            console.log("scroll false")
             btnBottom.style.opacity = '0';
         }
     } else {
         if (document.body.offsetHeight > document.documentElement.clientHeight) {
-            console.log("scroll true");
-            window.onscroll = function () { scrollTop() };
-            // scrollTop();
+            window.onscroll = function () { scrollTop(); };
         } else {
             btnBottom.style.opacity = '0';
         }
