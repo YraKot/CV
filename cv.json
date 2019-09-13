@@ -1,0 +1,202 @@
+{
+    "intro": {
+        "author": "Yurii Kitsera",
+        "photo": "",
+        "contacts": {
+            "address": "Ukraine, Lviv",
+            "phone": "+380678656486",
+            "email": "y.kitsera@gmail.com"
+        },
+        "socials": [
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/in/yuriy-kitsera-2a896b115/",
+                "subtitle": "yuriy-kitsera-2a896b115"
+            },
+            {
+                "title": "github",
+                "link": "https://github.com/YraKot",
+                "subtitle": "github.com/YraKot"
+            }
+        ]
+    },
+    "summary": [
+        {
+            "title": "Professional Summary",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "lang": ""
+                }
+            ],
+            "skills": [
+                {
+                    "skil": ""
+                }
+            ]
+        },
+        {
+            "title": "Work Experience",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "lang": ""
+                }
+            ],
+            "skills": [
+                {
+                    "skil": ""
+                }
+            ]
+        },
+        {
+            "title": "Additional Education",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "lang": ""
+                }
+            ],
+            "skills": [
+                {
+                    "skil": ""
+                }
+            ]
+        },
+        {
+            "title": "Education",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "lang": ""
+                }
+            ],
+            "skills": [
+                {
+                    "skil": ""
+                }
+            ]
+        },
+        {
+            "title": "Languages",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "languages": [
+                {
+                    "lang": "Ukrainian",
+                    "skil": "native"
+                },
+                {
+                    "lang": "English",
+                    "skil": "pre-intermediate"
+                },
+                {
+                    "lang": "Russian",
+                    "skil": "intermediate"
+                }
+            ],
+            "skills": [
+                {
+                    "skil": ""
+                }
+            ]
+        },
+        {
+            "title": "Technical skills",
+            "work": [
+                {
+                    "company": "",
+                    "period": "",
+                    "projects": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ], 
+            "languages": [
+                {
+                    "lang": ""
+                }
+            ],
+            "skills": [
+                {
+                    "skil": "HTML5, PUG, Nunjucks"
+                },
+                {
+                    "skil": "CSS3, SCSS, SASS, LESS"
+                },
+                {
+                    "skil": "JS, ES6, TS, jQuery"
+                },
+                {
+                    "skil": "Gulp, Webpack, Git"
+                },
+                {
+                    "skil": "Phtoshop, Zeplin, Sketch"
+                }
+            ]
+        }
+    ]
+}
