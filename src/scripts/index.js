@@ -1,8 +1,8 @@
 import '../styles/index.scss';
 import rudr_favorite from './favorite.js';
-import reader from './test';
+// import reader from './test';
 
-reader();
+// reader();
 
 var btnBottom = document.querySelector("#js-to-bottom");
 var btnWrp = document.querySelector(".btn-wrapper");
@@ -52,15 +52,15 @@ function checkScroll() {
 
 
 // tooltip
-var version = document.querySelector(".version");
-var tooltip = document.querySelector(".tooltip");
+// var version = document.querySelector(".version");
+// var tooltip = document.querySelector(".tooltip");
 
-version.addEventListener("mouseover", function () {
-    tooltip.classList.add('hover');
-});
-version.addEventListener("mouseout", function () {
-    tooltip.classList.remove('hover');
-});
+// version.addEventListener("mouseover", function () {
+//     tooltip.classList.add('hover');
+// });
+// version.addEventListener("mouseout", function () {
+//     tooltip.classList.remove('hover');
+// });
 //end
 
 

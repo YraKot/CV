@@ -132,6 +132,13 @@ li {
 	display: flex;
 	justify-content: center;
 	padding: 20px 0;
+	&-top {
+		@include mobile {
+			justify-content: center;
+		}
+		justify-content: flex-end;
+		padding: 0 0 20px;
+	}
 }
 
 .btn {
